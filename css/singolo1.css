@@ -1,0 +1,365 @@
+@font-face {
+	font-family: 'Lato-Black';
+	src: url('../assets/fonts/Lato-Black.eot');
+	src: local('☺'), url('../assets/fonts/Lato-Black.woff') format('woff'), 
+		url('../assets/fonts/Lato-Black.ttf') format('truetype'), 
+		url('../assets/fonts/Lato-Black.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Bold';
+	src: url('../assets/fonts/Lato-Bold.eot');
+	src: local('☺'), url('../assets/fonts/Lato-Bold.woff') format('woff'), 
+		url('../assets/fonts/Lato-Bold.ttf') format('truetype'), 
+		url('../assets/fonts/Lato-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Light';
+	src: url('../assets/fonts/Lato-Light.eot');
+	src: local('☺'), url('../assets/fonts/Lato-Light.woff') format('woff'), 
+		url('../assets/fonts/Lato-Light.ttf') format('truetype'),
+		url('../assets/fonts/Lato-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato-Regular';
+	src: url('../assets/fonts/Lato-Regular.eot');
+	src: local('☺'), url('../assets/fonts/Lato-Regular.woff') format('woff'), 
+		url('../assets/fonts/Lato-Regular.ttf') format('truetype'), 
+		url('../assets/fonts/Lato-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.nav, .logo{
+  font-size: 12px;
+}
+
+aside h1{
+  font-size: 31px;
+}
+
+aside h1{
+  font-family: 'Lato-Bold', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Lato-Light', sans-serif;
+}
+
+body{
+  width: 1020px;
+  height: 1000px;
+}
+
+header{
+  height: 89px;
+  background: #2d303a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+
+.dot{
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background: #494e62;
+  border-radius: 50%;
+  transform: translateY(-3px);
+}
+
+.logo h1::after{
+  content: '*';
+  color: #c95e5a;
+}
+
+.menu{
+  padding-top: 7px;
+}
+
+.menu li{
+  display: inline-block;
+}
+
+.menu li:nth-child(even){
+  padding: 0 11px;
+}
+
+.menu li a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  color: #c95e5a;
+  text-decoration: none;
+}
+
+.menu li a:active{
+  color: #d9dd7c;
+  text-decoration: none;
+}
+
+.line, .lineTwo, .lineFourth, .lineThree{
+  width: 100%;
+  height: 6px;
+}
+
+.line{
+  background: #323746;
+}
+
+.lineTwo{
+  background: #ea676b;
+}
+
+main{
+  height: 594px;
+  background: #f06c64;
+  position: relative;
+}
+
+.camVertical{
+  position: absolute;
+  top: 53px;
+  left: 112px;
+}
+
+.camGorizont{
+  position: absolute;
+  top: 174px;
+  left: 425px;
+}
+
+.prev, .next{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  border-left: solid 5px #ca4549;
+  border-top: solid 5px #ca4549;
+}
+
+
+.prev{
+  left: 30px;
+  transform: rotate(-45deg) translateY(2px) translateX(20px);
+}
+
+.next{
+  right: 30px;
+  transform: rotate(135deg) translateY(18px);
+}
+
+.prev:hover, .next:hover{
+  border-left-color: white;
+  border-top-color: white;
+}
+
+.prev:active, .next:active{
+  border-left-color: black;
+  border-top-color: black;
+}
+
+aside{
+  height: 494px;
+  background: #f2f2f2;
+  padding: 58px 40px;
+  color:#767e9e;
+}
+
+.lineThree{
+  background: white;
+}
+
+.catalog{
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 -10px; */
+}
+
+aside h1{
+  padding-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+
+.asideText{
+  letter-spacing: 1px;
+  line-height: 1.9;
+  padding-bottom: 10px;
+}
+
+.icon{
+  padding-right: 20px;
+}
+
+.row{
+  display: flex;
+  margin: 35px 0;
+}
+
+.text h2{
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-family: 'Lato-Black', sans-serif;
+  line-height: 19px;
+  letter-spacing: -0.5px;
+}
+
+.col{
+  width: 32%;
+}
+
+.text p{
+  font-size: 13px;
+  line-height: 1.7;
+  word-spacing: 2px;
+  letter-spacing: -0.4px;
+  font-family: 'Lato-Light', sans-serif;
+}
+
+.articlePortfolio{
+  height: 864px;
+  background: #2d303a;
+  color: #666d89;
+  padding: 60px 40px;
+}
+
+.lineFourth{
+  background: #323746;
+}
+
+.articlePortfolio h1{
+  font-family: 'Lato-Black', sans-serif;
+  padding-bottom: 23px;
+  font-size: 30px;
+}
+
+.articlePortfolio p{
+  padding-bottom: 16px;
+  letter-spacing: 0.8px;
+}
+
+.navPortfolio ul li{
+  display: inline-block;
+  border: #666d89 1px solid;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 6px;
+  padding: 3px 5px;
+  letter-spacing: 0.5px;
+}
+
+.navPortfolio{
+  padding-bottom: 19px;
+}
+
+.pictures{
+  height: 605px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colPic{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navPortfolio ul li:hover{
+  color: white;
+  border: white 1px solid;
+}
+
+.navPortfolio ul li:active{
+  color: yellow;
+  border: yellow 1px solid;
+}
+
+.colPic img:hover, .navPortfolio ul li:active, .prev:hover, .next:hover, .menu li a:active, .navPortfolio ul li:hover, .menu li a:hover, .prev:active, .next:active{
+  cursor: pointer;
+}
+
+.porfolioUsers{
+  display: flex;
+  justify-content: space-between;
+}
+
+.myUser{
+  width: 300px;
+}
+
+.articleAboutUs{
+  height: 728px;
+  background: #f2f2f2;
+  padding: 60px 40px;
+  color: #666d89;
+}
+
+.articleAboutUs h1{
+  font-size: 30px;
+  letter-spacing: -0.1px;
+  padding-bottom: 17px;
+  font-family: 'Lato-Black', sans-serif;
+}
+
+.articleAboutUs p{
+  font-size: 18px;
+  letter-spacing: 0px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  font-family: 'Lato-Light', sans-serif;
+  padding-bottom: 44px;
+}
+
+.myUser h2{
+  font-size: 19px;
+  padding: 11px 0 7px 0;
+  letter-spacing: -0.5px;
+  font-family: 'Lato-Bold', sans-serif;
+}
+
+.myUser p{
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  font-family: 'Lato-Light', sans-serif;
+  margin-bottom: -19px;
+}
+
+.icons{
+  display: flex;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  border: #666d89 1px solid;
+  border-radius: 50%;
+  margin-right: 8px;
+
+}
+
+.icon a{
+  color:#666d89;
+}
